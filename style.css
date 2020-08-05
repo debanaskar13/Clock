@@ -13,22 +13,37 @@ body{
 }
 
 .clock{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: rgba(255,255,255,0.8);
     border-radius: 50%;
     border: 2px solid black;
     position: relative;
 }
 
+.digital{
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 45px;
+    top: 90px;
+    left: 110px;
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
 .clock .number{
     --rotation:0;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 87%;
+    height: 87%;
     text-align: center;
     font-size: 1.5rem;
-    transform: rotate(var(--rotation));
+    transform: translate(7%,7%) rotate(var(--rotation));
 }
 
 .clock .number1{ --rotation: 30deg;}
@@ -78,12 +93,89 @@ body{
 
 .clock .hand.minute{
     width: 7px;
-    height: 40%;
+    height: 37%;
     background-color: black;
 }
 
 .clock .hand.hour{
     width: 10px;
-    height: 35%;
+    height: 25%;
     background-color: black;
 }
+
+.small{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+
+    /* background-color: black; */
+    /* border: 1px solid red; */
+    text-align: center;
+    --rotation:0;
+    transform: rotate(var(--rotation));
+}
+
+.large{
+    font-size: 1.6rem;
+}
+
+.clock .small1{ --rotation : 0deg}
+.clock .small2{ --rotation : 6deg}
+.clock .small3{ --rotation : 12deg}
+.clock .small4{ --rotation : 18deg}
+.clock .small5{ --rotation : 24deg}
+.clock .small6{ --rotation : 30deg}
+.clock .small7{ --rotation : 36deg}
+.clock .small8{ --rotation : 42deg}
+.clock .small9{ --rotation : 48deg}
+.clock .small10{ --rotation : 54deg}
+.clock .small11{ --rotation : 60deg}
+.clock .small12{ --rotation : 66deg}
+.clock .small13{ --rotation : 72deg}
+.clock .small14{ --rotation : 78deg}
+.clock .small15{ --rotation : 84deg}
+.clock .small16{ --rotation : 90deg}
+.clock .small17{ --rotation : 96deg}
+.clock .small18{ --rotation : 102deg}
+.clock .small19{ --rotation : 108deg}
+.clock .small20{ --rotation : 114deg}
+.clock .small21{ --rotation : 120deg}
+.clock .small22{ --rotation : 126deg}
+.clock .small23{ --rotation : 132deg}
+.clock .small24{ --rotation : 138deg}
+.clock .small25{ --rotation : 144deg}
+.clock .small26{ --rotation : 150deg}
+.clock .small27{ --rotation : 156deg}
+.clock .small28{ --rotation : 162deg}
+.clock .small29{ --rotation : 168deg}
+.clock .small30{ --rotation : 174deg}
+.clock .small31{ --rotation : 180deg}
+.clock .small32{ --rotation : 186deg}
+.clock .small33{ --rotation : 192deg}
+.clock .small34{ --rotation : 198deg}
+.clock .small35{ --rotation : 204deg}
+.clock .small36{ --rotation : 210deg}
+.clock .small37{ --rotation : 216deg}
+.clock .small38{ --rotation : 222deg}
+.clock .small39{ --rotation : 228deg}
+.clock .small40{ --rotation : 234deg}
+.clock .small41{ --rotation : 240deg}
+.clock .small42{ --rotation : 246deg}
+.clock .small43{ --rotation : 252deg}
+.clock .small44{ --rotation : 258deg}
+.clock .small45{ --rotation : 264deg}
+.clock .small46{ --rotation : 270deg}
+.clock .small47{ --rotation : 276deg}
+.clock .small48{ --rotation : 282deg}
+.clock .small49{ --rotation : 288deg}
+.clock .small50{ --rotation : 294deg}
+.clock .small51{ --rotation : 300deg}
+.clock .small52{ --rotation : 306deg}
+.clock .small53{ --rotation : 312deg}
+.clock .small54{ --rotation : 318deg}
+.clock .small55{ --rotation : 324deg}
+.clock .small56{ --rotation : 330deg}
+.clock .small57{ --rotation : 336deg}
+.clock .small58{ --rotation : 342deg}
+.clock .small59{ --rotation : 348deg}
+.clock .small60{ --rotation : 354deg}
